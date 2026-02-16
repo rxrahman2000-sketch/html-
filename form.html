@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: WHITE;
+            background-color: black;
+        }
+
+        form {
+            display: flex;
+            gap: 0.5rem;
+            flex-direction: column;
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        input,
+        select {
+            padding: 5px;
+            border-radius: 16px;
+        }
+
+        select {
+            padding: 5px;
+            border-radius: 16px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="signup.php" method="get" id="g">
+
+        <h1>Register Your Account</h1>
+
+
+        <img src="a.jpg" alt="">
+
+
+        <fieldset>
+            <legend>INPUTS</legend>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="Enter password" name="password" required>
+</fieldset>
+
+        <label for="email">Email</label>
+
+        <input id="email" autofocus required name="email" placeholder="Enter Email " type="email">
+
+
+        <select name="gender" id="gender">
+
+            <option value="male">Male</option>
+            <option value="female" selected>Female</option>
+            <input style="background-color: green; font-size: 15px;" type="reset"  draggable="true" >
+            <input type="hidden" style="background-color: green; font-size: 15px;" name="age" value="10">
+            <input style="background-color: green; font-size: 15px;" type="submit" value="Register">
+
+        </select>
+
+
+
+
+        <textarea name="" id=""></textarea>
+
+
+        <input list="dl">
+        <datalist   id="dl" >
+            <option value="saki">saki</option>
+            <option value="oyo">oyo</option>
+            <option value="abia">abia</option>
+            <option value="aje">aje</option>
+        </datalist>
+        <input step="50" type="range">
+
+    </form>
+
+
+    <input type="text"  form="g" name="h">
+
+
+</body>
+
+</html>
